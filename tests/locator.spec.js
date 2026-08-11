@@ -40,9 +40,5 @@ test('T2', async({page}) => {
    await page.getByRole('button', {name: 'Add to cart'}).click();
 
    await page.getByRole('button', {name: 'Add to wishlist'}).click();
-   await page.getByAltText('facebook sharing button').click();
-   
-
-
-
+   await page.getByAltText('facebook sharing button').click(); 
 })
