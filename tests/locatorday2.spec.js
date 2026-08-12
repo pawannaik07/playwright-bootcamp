@@ -56,6 +56,6 @@ test('T9', async({page}) => {
 
 test('T10', async({page}) => {
     await page.goto(HtmlFile);
-    await page.locator('.product-card').filter({has :page.locator('.stock low-stock')}).getByRole('button', {name: 'Add to Cart'}).click();
+    await page.locator('.product-card').filter({hasText : 'Only 3 left'}).getByRole('button', {name: 'Add to Cart'}).click();
 })
 
